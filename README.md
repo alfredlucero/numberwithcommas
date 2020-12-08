@@ -2,6 +2,31 @@
 
 TypeScript npm package to convert numbers (string | numbers) to number strings with commas in the proper thousands, millions, billions, etc. places
 
+## How to use numwithcommas?
+
+Install the package by doing the following:
+
+`npm install --save numwithcommas`
+
+In your code, you can import it like this:
+
+```js
+import { numWithCommas } from "numwithcommas";
+```
+
+The function `numWithCommas` takes in a string or a number that looks like 500, "500", 1000, "1000", 1000000, or "1000000" and returns a string with commas in the proper places. You can see the types that come bundled with the package in your VSCode.
+
+```js
+import { numWithCommas } from "numwithcommas";
+
+numWithCommas(500); // "500"
+numWithCommas("500"); // "500"
+numWithCommas(1000); // "1,000"
+numWithCommas("1000"); // "1,000"
+numWithCommas(1000000); // "1,000,000"
+numWithCommas("1000000"); // "1,000,000"
+```
+
 ## How to test your package changes locally before publishing?
 
 You can run `npm run test` to run the Jest unit tests and whenever you commit new changes, the Husky pre-commit Git hook will run the unit tests to be sure they pass.
