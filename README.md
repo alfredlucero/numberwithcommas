@@ -1,4 +1,4 @@
-# numberwithcommas
+# numwithcommas
 
 TypeScript npm package to convert numbers (string | numbers) to number strings with commas in the proper thousands, millions, billions, etc. places
 
@@ -15,3 +15,11 @@ Then, `cd samplelinkedconsumer` and run `npm link ../` to link the `numberwithco
 Finally, run `tsc usage.ts` to compile it down to JavaScript and `node usage.js` to run the code that tries using the linked local package.
 
 ## How to publish a new npm package version?
+
+Make sure you are logged into your account through `npm login`. If you are not logged into the proper user, use `npm logout` first.
+
+Then, run `npm run build` to compile the package into the `dist/` folder.
+
+Next, do `npm version <patch|minor|major>`.
+
+Finally, do `npm publish`.
