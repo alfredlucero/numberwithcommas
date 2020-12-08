@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "numwithcommas": "^1.1.1"
+    "numwithcommas": "^1.1.3"
   }
 }
