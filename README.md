@@ -48,3 +48,15 @@ Then, run `npm run build` to compile the package into the `dist/` folder.
 Next, do `npm version <patch|minor|major>`.
 
 Finally, do `npm publish`.
+
+## How to test your package changes after publishing?
+
+Use the `sampleconsumer` folder and go into the directory with `cd sampleconsumer`.
+
+Install the version you published
+
+`npm install numwithcommas@X.X.X`
+
+This assumes you have TypeScript installed globally for you to run `tsc` and to run Node commands like `node` in your terminal.
+
+Run `tsc usage.ts` to compile it down to JavaScript and `node usage.js` to run the code that tries using the linked local package.
