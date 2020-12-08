@@ -1,3 +1,6 @@
 tsconfig.json
 src
 samplelinkedconsumer
+numberWithCommas.test.*
+.husky
+babel.config.js
