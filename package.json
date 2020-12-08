@@ -1,7 +1,7 @@
 {
-  "name": "numberwithcommas",
+  "name": "numwithcommas",
   "version": "1.0.0",
-  "description": "TypeScript npm package to convert numbers (string | numbers) to number strings with commas in the proper thousands, millions, billions, etc. places",
+  "description": "TypeScript npm package, numwithcommas, to convert numbers (string | numbers) to number strings with commas in the proper thousands, millions, billions, etc. places",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "private": false,
