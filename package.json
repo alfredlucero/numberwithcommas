@@ -4,7 +4,11 @@
   "description": "TypeScript npm package to convert numbers (string | numbers) to number strings with commas in the proper thousands, millions, billions, etc. places",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "private": false,
   "scripts": {
+    "postinstall": "husky install",
+    "prepublishOnly": "pinst --disable",
+    "postpublish": "pinst --enable",
     "test": "jest",
     "build": "tsc",
     "publish": "npm publish"
@@ -31,7 +35,9 @@
     "@babel/preset-typescript": "^7.12.7",
     "@types/jest": "^26.0.16",
     "babel-jest": "^26.6.3",
+    "husky": "^5.0.4",
     "jest": "^26.6.3",
+    "pinst": "^2.1.1",
     "typescript": "^4.1.2"
   }
 }
