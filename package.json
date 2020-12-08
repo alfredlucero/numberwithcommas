@@ -6,12 +6,11 @@
   "types": "dist/index.d.ts",
   "private": false,
   "scripts": {
-    "_postinstall": "husky install",
+    "postinstall": "husky install",
     "prepublishOnly": "pinst --disable",
-    "postpublish": "pinst --enable",
+    "postpublish": "pinst --enable && git push --follow-tags",
     "test": "jest",
-    "build": "rm -rf dist/ && tsc",
-    "publish": "npm publish"
+    "build": "rm -rf dist/ && tsc"
   },
   "repository": {
     "type": "git",
