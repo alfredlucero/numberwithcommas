@@ -2,7 +2,7 @@ tsconfig.json
 src
 samplelinkedconsumer
 sampleconsumer
-numberWithCommas.test.*
+numWithCommas.test.*
 .husky
 babel.config.js
 jest.config.js
